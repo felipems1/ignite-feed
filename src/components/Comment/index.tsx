@@ -1,24 +1,24 @@
-import { Trash, ThumbsUp } from "@phosphor-icons/react";
-import { Avatar } from "./Avatar";
-import styles from "./Comment.module.css";
-import { useState } from "react";
+import { Trash, ThumbsUp } from '@phosphor-icons/react'
+import { Avatar } from '../Avatar'
+import styles from './Comment.module.css'
+import { useState } from 'react'
 
 interface CommentProps {
-  content: string;
-  onDeleteComment: (comment: string) => void;
+  content: string
+  onDeleteComment: (comment: string) => void
 }
 
 export function Comment({ content, onDeleteComment }: CommentProps) {
-  const [likeCount, setLikeCount] = useState(0);
+  const [likeCount, setLikeCount] = useState(0)
 
   function handleDeleteComment() {
-    onDeleteComment(content);
+    onDeleteComment(content)
   }
 
   function handleLikeComment() {
     setLikeCount((state) => {
-      return state + 1;
-    });
+      return state + 1
+    })
   }
 
   return (
@@ -34,8 +34,8 @@ export function Comment({ content, onDeleteComment }: CommentProps) {
               </time>
             </div>
             <button onClick={handleDeleteComment} title="Deletar comentário">
-              {" "}
-              <Trash size={24} />{" "}
+              {' '}
+              <Trash size={24} />{' '}
             </button>
           </header>
           <p>{content}</p>
@@ -47,5 +47,5 @@ export function Comment({ content, onDeleteComment }: CommentProps) {
         </footer>
       </div>
     </div>
-  );
+  )
 }
