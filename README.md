@@ -1,4 +1,4 @@
-<h1 align="center">Dev Feed</h1>
+<h1 align="center">Ignite Feed</h1>
 
 <div align="center">
   <img src="./public/preview.png" alt="demonstração do projeto" >
@@ -8,7 +8,7 @@
 
 ## 1 - Sobre
 
-O website Dev Feed é uma plataforma interativa com um feed de publicações.
+O website Ignite Feed é uma plataforma interativa com um feed de publicações.
 
 ## 2 - Tecnologias
 
@@ -17,8 +17,6 @@ Um pouco das tecnologias que foram utilizadas no projeto:
 - ReactJS
 - TypeScript
 - CSS Modules
-
----
 
 ## 3 - Rodando o projeto:
 
